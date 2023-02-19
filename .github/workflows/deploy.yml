@@ -12,4 +12,5 @@ jobs:
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
       - run: ls
-      - run: cd server/devcamper
+      - run: npm install
+      - run: ls
