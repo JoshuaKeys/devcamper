@@ -11,5 +11,5 @@ jobs:
       - uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
-      - run: doctl compute ssh root@104.248.132.76 
+      - run: ssh root@104.248.132.76 
       - run: ls
