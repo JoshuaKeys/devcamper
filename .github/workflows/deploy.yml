@@ -11,5 +11,5 @@ jobs:
       - uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
-      - run: git pull && npm install
+      - run: doctl compute ssh
       - run: ls
